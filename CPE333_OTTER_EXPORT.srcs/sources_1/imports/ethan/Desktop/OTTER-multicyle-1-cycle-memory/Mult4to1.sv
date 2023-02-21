@@ -68,10 +68,10 @@ module Mult3to1(In1, In2, In3, Sel, Out);
     output logic [31:0] Out; //64-bit output
     always_comb
         case (Sel) //a 3->1 multiplexor
-            0: Out <= In3;
-            1: Out <= In1; 
-            2: Out <= In2; 
-            default: Out <= In3;
+            0: Out <= In1;
+            1: Out <= In2; 
+            2: Out <= In3; 
+            default: Out <= In1;
         endcase
 endmodule
 

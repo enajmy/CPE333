@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_ArithLogicUnit_sv_123497656 " />
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="129,505.833 ns"></ZoomStartTime>
+      <ZoomEndTime time="129,702.834 ns"></ZoomEndTime>
+      <Cursor1Time time="129,599.433 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="306"></NameColumnWidth>
+      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wvobject fp_name="/testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/PC/PC_COUNT" type="array">
+      <obj_property name="ElementShortName">PC_COUNT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_COUNT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/de_inst.pc" type="array">
+      <obj_property name="ElementShortName">.pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">.pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/de_ex_inst.pc" type="array">
+      <obj_property name="ElementShortName">.pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">.pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/memory/MEM_DOUT1" type="array">
+      <obj_property name="ElementShortName">MEM_DOUT1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_DOUT1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/pc_sel" type="array">
+      <obj_property name="ElementShortName">pc_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/delay_pc_sel" type="array">
+      <obj_property name="ElementShortName">delay_pc_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_pc_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/RF/RF[1]" type="array">
+      <obj_property name="ElementShortName">[1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/RF/RF[2]" type="array">
+      <obj_property name="ElementShortName">[2][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/RF/RF[30]" type="array">
+      <obj_property name="ElementShortName">[30][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[30][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/RF/RF[29]" type="array">
+      <obj_property name="ElementShortName">[29][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/de_inst.opcode" type="array">
+      <obj_property name="ElementShortName">.opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/de_ex_inst.opcode" type="array">
+      <obj_property name="ElementShortName">.opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/ex_mem_inst.opcode" type="array">
+      <obj_property name="ElementShortName">.opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/ForwardInputA/Sel" type="array">
+      <obj_property name="ElementShortName">Sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/ForwardInputA/Out" type="array">
+      <obj_property name="ElementShortName">Out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/ForwardInputB/Sel" type="array">
+      <obj_property name="ElementShortName">Sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/ForwardInputB/Out" type="array">
+      <obj_property name="ElementShortName">Out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/de_ex_inst.rs2_used" type="logic">
+      <obj_property name="ElementShortName">.rs2_used</obj_property>
+      <obj_property name="ObjectShortName">.rs2_used</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/ALU/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/ALU/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/ALU/ALUOut" type="array">
+      <obj_property name="ElementShortName">ALUOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/loadUse" type="logic">
+      <obj_property name="ElementShortName">loadUse</obj_property>
+      <obj_property name="ObjectShortName">loadUse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/memRead1" type="logic">
+      <obj_property name="ElementShortName">memRead1</obj_property>
+      <obj_property name="ObjectShortName">memRead1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/pcWrite" type="logic">
+      <obj_property name="ElementShortName">pcWrite</obj_property>
+      <obj_property name="ObjectShortName">pcWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/RF/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/jumpHazardflag" type="logic">
+      <obj_property name="ElementShortName">jumpHazardflag</obj_property>
+      <obj_property name="ObjectShortName">jumpHazardflag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUT/MCU/de_inst.memWrite" type="logic">
+      <obj_property name="ElementShortName">.memWrite</obj_property>
+      <obj_property name="ObjectShortName">.memWrite</obj_property>
+   </wvobject>
+</wave_config>

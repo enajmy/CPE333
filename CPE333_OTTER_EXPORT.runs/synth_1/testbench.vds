@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Feb 17 10:52:38 2023
-# Process ID: 1892
+# Start of session at: Tue Feb 21 14:57:30 2023
+# Process ID: 27120
 # Current directory: C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.runs/synth_1
 # Command line: vivado.exe -log testbench.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench.tcl
 # Log file: C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.runs/synth_1/testbench.vds
@@ -11,7 +11,7 @@
 # Running On: Lenovo-PC, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 12, Host memory: 16890 MB
 #-----------------------------------------------------------
 source testbench.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 420.738 ; gain = 107.297
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 421.227 ; gain = 99.492
 Command: read_checkpoint -auto_incremental -incremental {C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/utils_1/imports/synth_1/OTTER_Wrapper.dcp}
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/utils_1/imports/synth_1/OTTER_Wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -20,15 +20,18 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 20404
+INFO: [Synth 8-7075] Helper process launched with PID 24344
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 WARNING: [Synth 8-11014] non-net output port 'PC_COUNT' cannot be initialized at declaration in SystemVerilog mode [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/ProgCount.sv:28]
-INFO: [Synth 8-11241] undeclared symbol 'intTaken', assumed default net type 'wire' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:197]
-WARNING: [Synth 8-6901] identifier 'jumpHz' is used before its declaration [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:148]
+INFO: [Synth 8-11241] undeclared symbol 'intTaken', assumed default net type 'wire' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:194]
+WARNING: [Synth 8-6901] identifier 'jumpHazardflag' is used before its declaration [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:144]
+WARNING: [Synth 8-6901] identifier 'jumpHazardflag' is used before its declaration [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:145]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1226.875 ; gain = 406.891
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1230.227 ; gain = 410.918
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'testbench' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/CPE 333/OTTER Files/OTTER Variable Latency Memory/testbench.sv:24]
 WARNING: [Synth 8-6896] loop limit (65536) exceeded inside initial block, initial block items will be ignored [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/CPE 333/OTTER Files/OTTER Variable Latency Memory/testbench.sv:41]
@@ -44,18 +47,18 @@ INFO: [Synth 8-6157] synthesizing module 'Mult2to1' [C:/Users/ethan/Documents/Vi
 INFO: [Synth 8-6155] done synthesizing module 'Mult2to1' (0#1) [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/Mult4to1.sv:78]
 INFO: [Synth 8-6157] synthesizing module 'OTTER_CU_Decoder' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/CU_Decoder.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'OTTER_CU_Decoder' (0#1) [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/CU_Decoder.sv:23]
-WARNING: [Synth 8-7071] port 'CU_PCSOURCE' of module 'OTTER_CU_Decoder' is unconnected for instance 'CU_DECODER' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:187]
-WARNING: [Synth 8-7023] instance 'CU_DECODER' of module 'OTTER_CU_Decoder' has 12 connections declared, but only 11 given [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:187]
+WARNING: [Synth 8-7071] port 'CU_PCSOURCE' of module 'OTTER_CU_Decoder' is unconnected for instance 'CU_DECODER' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:184]
+WARNING: [Synth 8-7023] instance 'CU_DECODER' of module 'OTTER_CU_Decoder' has 12 connections declared, but only 11 given [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:184]
 INFO: [Synth 8-6157] synthesizing module 'OTTER_ALU' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/ArithLogicUnit.sv:22]
 INFO: [Synth 8-6155] done synthesizing module 'OTTER_ALU' (0#1) [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/ArithLogicUnit.sv:22]
 INFO: [Synth 8-6157] synthesizing module 'Mult3to1' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/Mult4to1.sv:65]
 INFO: [Synth 8-6155] done synthesizing module 'Mult3to1' (0#1) [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/Mult4to1.sv:65]
-INFO: [Synth 8-6157] synthesizing module 'OTTER_mem_byte' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:97]
+INFO: [Synth 8-6157] synthesizing module 'OTTER_mem_byte' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:22]
 	Parameter ACTUAL_WIDTH bound to: 14 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'test_all.mem' is read successfully [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:132]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:214]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:200]
-INFO: [Synth 8-6155] done synthesizing module 'OTTER_mem_byte' (0#1) [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:97]
+INFO: [Synth 8-3876] $readmem data file 'test_all.mem' is read successfully [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:135]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:121]
+INFO: [Synth 8-6155] done synthesizing module 'OTTER_mem_byte' (0#1) [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:22]
 INFO: [Synth 8-6157] synthesizing module 'forwarding_Unit' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/new/forwarding_Unit.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'forwarding_Unit' (0#1) [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/new/forwarding_Unit.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'OTTER_MCU' (0#1) [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:65]
@@ -75,36 +78,34 @@ INFO: [Synth 8-6155] done synthesizing module 'debounce_one_shot' (0#1) [C:/User
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/OTTER_Wrapper.sv:123]
 INFO: [Synth 8-6155] done synthesizing module 'OTTER_Wrapper' (0#1) [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/OTTER_Wrapper.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'testbench' (0#1) [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/CPE 333/OTTER Files/OTTER Variable Latency Memory/testbench.sv:24]
-WARNING: [Synth 8-6014] Unused sequential element j_reg was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:150]
-WARNING: [Synth 8-6014] Unused sequential element de_ex_inst_reg[rs1_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:342]
-WARNING: [Synth 8-6014] Unused sequential element de_ex_inst_reg[rs2_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:342]
-WARNING: [Synth 8-6014] Unused sequential element de_ex_inst_reg[rd_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:342]
-WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[opcode] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:329]
-WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs1_addr] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:329]
-WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs2_addr] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:329]
-WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs1_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:329]
-WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs2_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:329]
-WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rd_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:329]
-WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[alu_fun] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:329]
-WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[func7] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:329]
-WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[ir] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:329]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[opcode] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs1_addr] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs2_addr] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs1_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs2_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rd_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[alu_fun] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[memWrite] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[memRead2] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[mem_type] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[func7] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[ir] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:165]
-WARNING: [Synth 8-6014] Unused sequential element mem_wb_rs2_reg was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:388]
-WARNING: [Synth 8-87] always_comb on 'loadUse_reg' did not result in combinational logic [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:148]
-WARNING: [Synth 8-87] always_comb on 'loadUseflag_reg' did not result in combinational logic [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:234]
+WARNING: [Synth 8-6014] Unused sequential element j_reg was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv:79]
+WARNING: [Synth 8-6014] Unused sequential element de_ex_inst_reg[rd_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:326]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[opcode] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:313]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs1_addr] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:313]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs2_addr] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:313]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs1_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:313]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs2_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:313]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rd_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:313]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[alu_fun] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:313]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[func7] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:313]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[ir] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:313]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[opcode] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs1_addr] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs2_addr] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs1_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs2_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rd_used] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[alu_fun] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[memWrite] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[memRead2] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[mem_type] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[func7] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[ir] was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:162]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_rs2_reg was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:376]
+WARNING: [Synth 8-87] always_comb on 'loadUse_reg' did not result in combinational logic [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:144]
+WARNING: [Synth 8-87] always_comb on 'loadUseflag_reg' did not result in combinational logic [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:218]
 WARNING: [Synth 8-3848] Net csr_reg in module/entity OTTER_MCU does not have driver. [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:75]
-WARNING: [Synth 8-3848] Net intTaken in module/entity OTTER_MCU does not have driver. [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:197]
+WARNING: [Synth 8-3848] Net intTaken in module/entity OTTER_MCU does not have driver. [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:194]
 WARNING: [Synth 8-6014] Unused sequential element r_vga_we_reg was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/OTTER_Wrapper.sv:120]
 WARNING: [Synth 8-6014] Unused sequential element uart_start_reg was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/OTTER_Wrapper.sv:121]
 WARNING: [Synth 8-6014] Unused sequential element r_vga_wa_reg was removed.  [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/OTTER_Wrapper.sv:126]
@@ -139,18 +140,18 @@ WARNING: [Synth 8-7129] Port Tx in module OTTER_Wrapper is either unconnected or
 WARNING: [Synth 8-7129] Port PS2Clk in module OTTER_Wrapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port PS2Data in module OTTER_Wrapper is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1366.578 ; gain = 546.594
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1368.859 ; gain = 549.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1366.578 ; gain = 546.594
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1368.859 ; gain = 549.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1366.578 ; gain = 546.594
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1368.859 ; gain = 549.551
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1366.578 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1368.859 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -462,39 +463,31 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 Finished Parsing XDC File [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/constrs_1/imports/OTTER-multicyle-1-cycle-memory/Basys3_constraints-1.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1409.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.777 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1409.320 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1409.777 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Preparing Guide Design
----------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/utils_1/imports/synth_1/OTTER_Wrapper.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1409.320 ; gain = 589.336
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1409.320 ; gain = 589.336
----------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'de_ex_inst_reg[func7]' and it is trimmed from '7' to '6' bits. [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:342]
+WARNING: [Synth 8-3936] Found unconnected internal register 'de_ex_inst_reg[func7]' and it is trimmed from '7' to '6' bits. [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:326]
 INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'debounce_one_shot'
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "OTTER_mem_byte:/memory_reg"
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "OTTER_mem_byte:/memory_reg"
@@ -512,8 +505,7 @@ INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of 
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "OTTER_mem_byte:/memory_reg"
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "OTTER_mem_byte:/memory_reg"
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "OTTER_mem_byte:/memory_reg"
-WARNING: [Synth 8-327] inferring latch for variable 'loadUse_reg' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:148]
-WARNING: [Synth 8-327] inferring latch for variable 'loadUseflag_reg' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:234]
+WARNING: [Synth 8-327] inferring latch for variable 'loadUse_reg' [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:144]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -526,18 +518,8 @@ WARNING: [Synth 8-327] inferring latch for variable 'loadUseflag_reg' [C:/Users/
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'sequential' in module 'debounce_one_shot'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : 
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -550,11 +532,11 @@ Detailed RTL Component Info :
 	   2 Input    5 Bit       Adders := 1     
 	   2 Input    4 Bit       Adders := 35    
 	   2 Input    3 Bit       Adders := 7     
-	   2 Input    2 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 16    
+	               32 Bit    Registers := 17    
 	               16 Bit    Registers := 2     
 	                8 Bit    Registers := 2     
 	                7 Bit    Registers := 1     
@@ -562,15 +544,15 @@ Detailed RTL Component Info :
 	                5 Bit    Registers := 5     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
-	                2 Bit    Registers := 5     
-	                1 Bit    Registers := 10    
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 11    
 +---Multipliers : 
 	              32x32  Multipliers := 1     
 +---RAMs : 
 	             512K Bit	(16384 X 32 bit)          RAMs := 1     
 	             1024 Bit	(32 X 32 bit)          RAMs := 1     
 +---Muxes : 
-	   4 Input   32 Bit        Muxes := 11    
+	   4 Input   32 Bit        Muxes := 12    
 	   2 Input   32 Bit        Muxes := 9     
 	   9 Input   32 Bit        Muxes := 2     
 	   7 Input   32 Bit        Muxes := 2     
@@ -580,6 +562,7 @@ Detailed RTL Component Info :
 	   2 Input    8 Bit        Muxes := 2     
 	   4 Input    8 Bit        Muxes := 1     
 	  19 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 1     
 	   4 Input    5 Bit        Muxes := 1     
 	   5 Input    5 Bit        Muxes := 1     
@@ -592,10 +575,10 @@ Detailed RTL Component Info :
 	   6 Input    2 Bit        Muxes := 1     
 	   5 Input    2 Bit        Muxes := 2     
 	   3 Input    2 Bit        Muxes := 2     
-	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
 	   7 Input    1 Bit        Muxes := 2     
 	   9 Input    1 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 9     
 	   3 Input    1 Bit        Muxes := 2     
 	   6 Input    1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
@@ -690,13 +673,12 @@ WARNING: [Synth 8-3332] Sequential element (memory_reg_mux_sel_b_pos_3) is unuse
 WARNING: [Synth 8-3332] Sequential element (memory_reg_mux_sel_b_pos_2) is unused and will be removed from module OTTER_mem_byte.
 WARNING: [Synth 8-3332] Sequential element (memory_reg_mux_sel_b_pos_1) is unused and will be removed from module OTTER_mem_byte.
 WARNING: [Synth 8-3332] Sequential element (memory_reg_mux_sel_b_pos_0) is unused and will be removed from module OTTER_mem_byte.
-WARNING: [Synth 8-3332] Sequential element (loadUse_reg__0) is unused and will be removed from module OTTER_MCU.
-WARNING: [Synth 8-3332] Sequential element (loadUseflag_reg__0) is unused and will be removed from module OTTER_MCU.
+WARNING: [Synth 8-3332] Sequential element (loadUse_reg) is unused and will be removed from module OTTER_MCU.
 WARNING: [Synth 8-3332] Sequential element (DUT/DB/FSM_sequential_PS_reg[2]) is unused and will be removed from module testbench.
 WARNING: [Synth 8-3332] Sequential element (DUT/DB/FSM_sequential_PS_reg[1]) is unused and will be removed from module testbench.
 WARNING: [Synth 8-3332] Sequential element (DUT/DB/FSM_sequential_PS_reg[0]) is unused and will be removed from module testbench.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -720,19 +702,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -750,37 +732,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -798,25 +780,25 @@ Report Cell Usage:
 +-+-----+------+
 +-+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1409.777 ; gain = 590.469
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 57 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1409.320 ; gain = 546.594
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1409.320 ; gain = 589.336
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1409.777 ; gain = 549.551
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1409.777 ; gain = 590.469
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.777 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.777 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete, checksum: 4b9f2ba5
 INFO: [Common 17-83] Releasing license: Synthesis
-94 Infos, 225 Warnings, 102 Critical Warnings and 0 Errors encountered.
+97 Infos, 222 Warnings, 101 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:52 . Memory (MB): peak = 1409.320 ; gain = 963.734
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:38 . Memory (MB): peak = 1409.777 ; gain = 963.676
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.runs/synth_1/testbench.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file testbench_utilization_synth.rpt -pb testbench_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 17 10:53:49 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 21 14:58:16 2023...
