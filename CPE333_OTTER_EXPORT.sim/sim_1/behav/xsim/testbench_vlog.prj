@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/ArithLogicUnit.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/BCD.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/CU_Decoder.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/CathodeDriver.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/Mult4to1.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/OTTER_Wrapper.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/ProgCount.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/SevSegDisp.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/debounce_one_shot.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/new/forwarding_Unit.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/registerFile.sv" \
+"../../../../CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Desktop/CPE 333/OTTER Files/OTTER Variable Latency Memory/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,31 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'pcWrite' might have multiple concurrent drivers [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:307]
+WARNING: [VRFC 10-3823] variable 'memRead1' might have multiple concurrent drivers [C:/Users/ethan/Documents/Vivado Projects/CPE333_OTTER_EXPORT/CPE333_OTTER_EXPORT.srcs/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv:309]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_ArithLogicUnit_sv_12349765...
+Compiling module xil_defaultlib.Mult4to1
+Compiling module xil_defaultlib.ProgCount
+Compiling module xil_defaultlib.OTTER_registerFile
+Compiling module xil_defaultlib.Mult2to1
+Compiling module xil_defaultlib.OTTER_CU_Decoder
+Compiling module xil_defaultlib.OTTER_ALU
+Compiling module xil_defaultlib.Mult3to1
+Compiling module xil_defaultlib.OTTER_mem_byte
+Compiling module xil_defaultlib.forwarding_Unit
+Compiling module xil_defaultlib.OTTER_MCU
+Compiling module xil_defaultlib.BCD
+Compiling module xil_defaultlib.CathodeDriver
+Compiling module xil_defaultlib.SevSegDisp
+Compiling module xil_defaultlib.debounce_one_shot
+Compiling module xil_defaultlib.OTTER_Wrapper
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

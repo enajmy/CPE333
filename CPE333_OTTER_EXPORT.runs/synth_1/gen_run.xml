@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1676659954" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/OTTER_Wrapper.dcp">
+  <File Type="PA-TCL" Name="testbench.tcl"/>
+  <File Type="REPORTS-TCL" Name="testbench_reports.tcl"/>
+  <File Type="RDS-RDS" Name="testbench.vds"/>
+  <File Type="RDS-UTIL" Name="testbench_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="testbench_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="testbench.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/ArithLogicUnit.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/ArithLogicUnit.sv"/>
+        <Attr Name="ImportTime" Val="1561160602"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/BCD.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/peripherals/BCD.sv"/>
+        <Attr Name="ImportTime" Val="1548041760"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/CU_Decoder.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/CU_Decoder.sv"/>
+        <Attr Name="ImportTime" Val="1551866490"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/CathodeDriver.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/peripherals/CathodeDriver.sv"/>
+        <Attr Name="ImportTime" Val="1548041760"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/Mult4to1.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/Mult4to1.sv"/>
+        <Attr Name="ImportTime" Val="1556412234"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/OTTER_Wrapper.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/OTTER_Wrapper.sv"/>
+        <Attr Name="ImportTime" Val="1675371141"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/ProgCount.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/ProgCount.sv"/>
+        <Attr Name="ImportTime" Val="1675801009"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/SevSegDisp.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/peripherals/SevSegDisp.sv"/>
+        <Attr Name="ImportTime" Val="1548041760"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OTTER-multicyle-1-cycle-memory/bram_dualport.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/OTTER-multicyle-1-cycle-memory/bram_dualport.sv"/>
+        <Attr Name="ImportTime" Val="1560137520"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/debounce_one_shot.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/peripherals/debounce_one_shot.sv"/>
+        <Attr Name="ImportTime" Val="1551867748"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/forwarding_Unit.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../School/Software/Vivado Projects/CPE333_OTTER/CPE333_OTTER.srcs/sources_1/new/forwarding_Unit.sv"/>
+        <Attr Name="ImportTime" Val="1675807809"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Downloads/otter_mcu_pipeline_template_v3.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/otter_mcu_pipeline_template_v3.sv"/>
+        <Attr Name="ImportTime" Val="1675370191"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/registerFile.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/registerFile.sv"/>
+        <Attr Name="ImportTime" Val="1551866496"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/CPE 333/OTTER Files/OTTER Variable Latency Memory/testbench.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CPE 333/OTTER Files/OTTER Variable Latency Memory/testbench.sv"/>
+        <Attr Name="ImportTime" Val="1675370603"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hazard_detection_Unit.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../School/Software/Vivado Projects/CPE333_OTTER/CPE333_OTTER.srcs/sources_1/new/hazard_detection_Unit.sv"/>
+        <Attr Name="ImportTime" Val="1675808415"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CLK_DIV_FS.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../School/Software/Vivado Projects/CPE333_OTTER/CPE333_OTTER.srcs/sources_1/new/CLK_DIV_FS.sv"/>
+        <Attr Name="ImportTime" Val="1675123284"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/CSR.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/CSR.sv"/>
+        <Attr Name="ImportTime" Val="1556790680"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/ControlUnit.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/ControlUnit.sv"/>
+        <Attr Name="ImportTime" Val="1578612786"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/OTTER_CPU.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/OTTER_CPU.sv"/>
+        <Attr Name="ImportTime" Val="1675197702"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/CLK_DIV_FS.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/CLK_DIV_FS.v"/>
+        <Attr Name="ImportTime" Val="1675121491"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/KeyboardDriver.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/peripherals/KeyboardDriver.sv"/>
+        <Attr Name="ImportTime" Val="1548041700"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/vga_driver.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/peripherals/vga_driver.sv"/>
+        <Attr Name="ImportTime" Val="1548041760"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ethan/Desktop/OTTER-multicyle-1-cycle-memory/peripherals/vga_fb_driver.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/peripherals/vga_fb_driver.sv"/>
+        <Attr Name="ImportTime" Val="1675118362"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../Desktop/test_all.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="testbench"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/OTTER-multicyle-1-cycle-memory/Basys3_constraints-1.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OTTER-multicyle-1-cycle-memory/Basys3_constraints-1.xdc"/>
+        <Attr Name="ImportTime" Val="1593031656"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/OTTER_Wrapper.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../School/Software/Vivado Projects/CPE333_OTTER/CPE333_OTTER.srcs/utils_1/imports/synth_1/OTTER_Wrapper.dcp"/>
+        <Attr Name="ImportTime" Val="1675278725"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
