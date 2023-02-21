@@ -1,1 +1,1 @@
-# Otter files for Cal Poly CPE 333
+# OTTER files for Cal Poly CPE 333
